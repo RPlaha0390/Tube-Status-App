@@ -1,35 +1,18 @@
-## Getting Started
+## Live Feed Tube App
 
-cd into this directory and run locally using gulp
+Tube app built using TFL API
 
-```bash
-$ gulp serve
-```
+## Description 
 
-## License 
+- Frameworks used include, Bootstrap and Underscore.js
+- The app has been coded using Javascript/JQuery, SCSS and HTML.
 
-The MIT License
+- Click "Get Tube Status" button
+- Results container will populate with a list of the tube lines and their statuses. 
+- Click "Close" button to empty results container
 
-Copyright (c) 2015, Max Woollard
+## Installation
 
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without
-restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following
-conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
-
+- Install dependencies: `npm install && bower install`
+- Run `gulp serve` to run locally
+- Run `gulp build` to build for production
