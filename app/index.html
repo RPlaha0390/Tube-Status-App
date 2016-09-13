@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+  </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/reset-css/reset.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <div class="container site-wrapper">
+    <div class="row">
+      <div class="col-xs-12">
+        <button class="tube-button">Get Tube Status</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 results"></div>
+      <div class="col-xs-12">
+        <button class="close-button">Close</button>
+      </div>
+    </div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/app.js -->
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script type="text/html" id='tube-result-data'>
+      <div class="col-md-12 <%= id %> tube-line-item">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <p>
+              <%= name %>
+            </p>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <p>
+              <%= lineStatuses[0].statusSeverityDescription %>
+                <% if (lineStatuses[0].hasOwnProperty('reason') === true) { %>
+                  <a class="plus-accordion" href="javascript:void(0)">+</a>
+                  <% } %>
+            </p>
+          </div>
+        </div>
+        <div class="row delay-reason">
+          <div class="col-md-12">
+            <p>
+              <%= lineStatuses[0].reason %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </script>
+</body>
+
+</html>

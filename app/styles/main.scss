@@ -1,0 +1,184 @@
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../bower_components/reset-css/_reset.scss";
+
+// endbower
+@import "global/*";
+@import "components/*";
+@import "templates/*";
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.clear {
+  clear: both;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.container {
+  &.site-wrapper {
+    margin-top: 50px;
+
+    .tube-button {
+      background: #1a5a92;
+      color: #fff;
+      box-shadow: none;
+      width: 100%;
+      border: none;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+
+    .close-button {
+      background: #1a5a92;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 15px;
+      display: none;
+      &.active { 
+        margin-top: 30px;
+        display: block;
+      }
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 50px;
+      color: #999999;
+    }
+
+    .results {
+      .tube-line-item {
+        background: #000000;
+
+
+        &.bakerloo {
+          background: #894e24;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          padding: 20px;
+        }
+
+        &.central {
+          padding: 20px;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          background: #dc241f;
+        }
+
+        &.circle {
+          padding: 20px;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          background: #ffce00;
+        }
+
+        &.district {
+          padding: 20px;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          background: #007229;
+        }
+
+        &.hammersmith-city {
+          padding: 20px;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          background: #d799af;
+        }
+
+        &.jubilee {
+          padding: 20px;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          background: #6a7278;
+        }
+
+        &.metropolitan {
+          padding: 20px;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          background: #751056;
+        }
+
+        &.piccadilly {
+          padding: 20px;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          background: #0019a8;
+        }
+
+        &.northern {
+          padding: 20px;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          background: #000000;
+        }
+
+        &.victoria {
+          padding: 20px;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          background: #00a0e2;
+        }
+
+        &.waterloo-city {
+          padding: 20px;
+          border-right: 1px solid #E8E8E8;
+          border-bottom: 1px solid #E8E8E8;
+          background: #76d0bd;
+        }
+
+        p {
+          font-size: 14px;
+          color: #fff;
+
+          a.plus-accordion {
+            position: absolute;
+            right: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+
+        &.show {
+          .delay-reason {
+            display: block;
+            padding: 20px 0;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            margin-top: 20px;
+
+            p {
+              font-size: 12px;
+              font-style: italic;
+              color: #333;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+
+      .delay-reason {
+        display: none;
+      }
+    }
+
+    //Line Status Colours
+ 
+  }
+}
