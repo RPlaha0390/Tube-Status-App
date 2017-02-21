@@ -8,7 +8,7 @@
 
   $('.tube-button').on('click', function () {
     // Get The JSON data 
-    $.getJSON('https://api.tfl.gov.uk/line/mode/tube/status', function (jsonData) {
+    $.getJSON('data/tubes.json', function (jsonData) {
         myJSON = jsonData;
       })
       .done(function () {
@@ -33,7 +33,6 @@
 
   function printDataToPage() {
     var html = '';
-
 
     $.each(myJSON, function (index, value) {
       html += getHTMLFromTemplate('#tube-result-data', index);
